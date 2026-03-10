@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Título descrição e tags-->
+    <title>Andrade & Maia Advocacia</title>
+    <meta name="description" content="Escritório de advocacia Andrade & Maia Advocacia, localizado em Florianópolis - SC. Oferecemos serviços jurídicos com excelência e humanidade.">
+    <meta name="keywords" content="Advocacia, Escritório de Advocacia, Florianópolis, Direito, Serviços Jurídicos, Andrade & Maia">
+    <meta name="author" content="Andrade & Maia Advocacia">
+    <meta name="theme-color" content="#37635A">
+
+    <link rel="icon" type="image/icon" href="assets/favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Barra de navegação-->
+    <nav>
+        <span class="navLogo"><a href="/"><img src="assets/logotipo.svg" alt="Andrade & Maia Advocacia"></a></span>
+        <ul class="navLinks">
+            <li><a href="#" onclick="jumpTo('sobre')">Sobre nós</a></li>
+            <li><a href="#" onclick="jumpTo('onde')">Onde nos encontrar</a></li>
+            <li><a href="#" onclick="jumpTo('contato')">Fale conosco</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!--Slideshow-->
+    <div class="slideshow">
+        <img src="assets/slideshowOverlay.svg" alt="" class="slideshowOverlay">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="assets/slideshow/equipe.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="assets/slideshow/canetada.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="assets/slideshow/socios.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="assets/slideshow/socioslogo.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </div>
+
+    <!--Conteúdo principal-->
+    <main>
+    
+    <h2 id="sobre">Advogados com excelência e humanidade</h2>
+    <p>Somos um escritório de advocacia localizado no Centro de Florianópolis. Prezamos oferecer um servço humanizado e ético para nossos clientes.</p>
+    <p>Confira algumas avaliações reais de nossos clientes satisfeitos:</p> 
+    
+    <!--Avaliações-->
+    <div class="reviews" id="horScrollContainer">
+
+        <div class="reviewCard">
+            <p>★★★★★ • L****** B****</p>
+            <p>Confio no trabalho do escritório Andrade & Maia Advogados de olhos fechados, porque entregam um atendimento preciso, responsável e muito qualificado.</p>
+        </div>
+
+        <div class="reviewCard">
+            <p>★★★★★ • A** M******</p>
+            <p>O Dr João Andrade foi muito profissional, prestativo e ético na sua duo diligence imobiliária! Uma assessoria muito necessária para quem deseja adquirir um imóvel!</p>
+        </div>
+
+        <div class="reviewCard">
+            <p>★★★★★ • R****** D*****</p>
+            <p>Excelentes profissionais. Conseguimos uma ótima negociação para quitação do financiamento (...) Obrigado por toda ajuda e atenção. Recomendo.</p>
+        </div>
+
+        <div class="reviewCard">
+            <p>★★★★★ • A****** S*****</p>
+            <p>Excelente trabalho , Meus parabéns eu recomendo e pode confiar. O contato foi totalmente virtual (...) Super recomendo.</p>
+        </div>
+
+    </div>
+
+    <h2>Conheça a nossa equipe</h2>
+    <p>Contamos com uma equipe de advogados bem qualificados e experientes, prontos para te ajudar e orientar a qualquer momento!</p>
+
+    <!--Cards da Equipe-->
+    <div class="equipe">
+
+        <!--Fábio-->
+        <div class="cardEquipe">
+            <div class="cardImgContainer"><img src="assets/perfil/fabio.jpg" alt=""></div>
+            
+            <div class="textoCardEquipe">
+                <h3>Fábio Maia (OAB/SC 38.844-A)</h3>
+                <p class="miniBio">Especialista em direito público, RPPS,  trabalhista e direitos coletivos.</p>
+                <p>Sócio-fundador da Andrade & Maia Advocacia e mestre em Direito pela UFSC, construiu carreira voltada à defesa de causas populares e de servidores públicos, com ampla experiência em assessoria jurídica institucional, especialmente no SINTESPE. Atuou no movimento estudantil, no Poder Legislativo e em órgãos federais, além de ter sido professor universitário.</p>
+            </div>
+        </div>
+
+        <!--João-->
+        <div class="cardEquipe">
+            <div class="cardImgContainer"><img src="assets/perfil/joao.jpg" alt=""></div>
+            
+            <div class="textoCardEquipe">
+                <h3>João Matheus Andrade (OAB/SC 48.597)</h3>
+                <p class="miniBio">Especialista em direito bancário, imobiliário, penal e do consumidor.</p>
+                <p>Sócio-fundador do escritório Andrade & Maia Advocacia, formado desde 2017. Pós-graduado em Processo Penal e em Direito e Negócios Imobiliários pela Damásio de Jesus, dedica-se à defesa dos direitos dos consumidores, à assistência a vítimas de violência doméstica e à atuação em processos penais, com foco em grupos economicamente vulneráveis. É membro do IGENTES – Instituto Gentes de Direito, na defesa do direito à terra e à moradia por movimentos sociais.</p>            </div>
+        </div>
+
+        <!--Leonardo-->
+        <div class="cardEquipe">
+            <div class="cardImgContainer"><img src="assets/perfil/leonardo.jpg" alt=""></div>
+            
+            <div class="textoCardEquipe">
+                <h3>Leonardo de Souza Moretto (OAB/SC 61.334)</h3>
+                <p class="miniBio">Especialista em direito previdenciário e criminal.</p>
+                <p>Bacharel em Direito pela UFSC, participou ativamente da política estudantil e de projetos de extensão como o SAJU, além de ter estagiado por dois anos na Defensoria Pública da União, com foco em Direito Previdenciário. Após a graduação, concluiu pós-graduação em Direito Processual Penal pelo Instituto Damásio de Direito e retornou à DPU como estagiário de pós-graduação. Integra o escritório Andrade & Maia Advocacia desde 2021, com atuação junto ao SINPAW, destacando-se pelo compromisso com a defesa dos direitos humanos e por uma prática jurídica ética e humanizada.</p>
+            </div>
+        </div>
+
+        <!--Duda-->
+        <div class="cardEquipe">
+            <div class="cardImgContainer"><img src="assets/perfil/maria.jpg" alt=""></div>
+            
+            <div class="textoCardEquipe">
+                <h3>Maria Eduarda de Souza (OAB/SC 74.513)</h3>
+                <p class="miniBio">Especialista em direito da família e sucessões.</p>
+                <p>Bacharela em Direito pela UFSC, advogada e mestranda em Direito na mesma instituição, participou de projetos de pesquisa e extensão como a Revista AVANT, o SAJU e o SOCIODIR, com atuação voltada a comunidades em situação de vulnerabilidade e à análise crítica do Direito. Dedica-se ao estudo das questões de gênero e das desigualdades estruturais, pesquisando no mestrado, iniciado em 2025, os impactos do neoliberalismo e do neoconservadorismo sobre os direitos das mulheres, com foco em assédio.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h2>De Floripa ao resto do Brasil...</h2>
+
+    <p>Nosso escritório fica no coração da cidade de Florianópolis, próximo à Catedral Metropolitana.</p>
+    <p>Também atendemos nossos clientes a longa distância, de qualquer lugar do país!</p>
+
+    <!-- Embed do Google Maps-->
+    <div class="googleMaps" id="onde">
+        <iframe width="600" height="250" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJiWngE045J5URJx8O8_rQ9z8&key=AIzaSyAwjP8oSqKryXqNAxQ3tyvw3kMxHrfkU2Y"></iframe>
+        <div class="mapText">
+            <h4>📌 Ed. Miguel Daux - R. Anita Garibaldi, 79 - Salas 603 e 604 - Centro, Florianópolis - SC, 88010-500</h4>
+            <button>Copiar Endereço</button>
+        </div>
+    </div>
+
+    <!--Métodos de contato-->
+    <h2>...Estamos prontos para te atender!</h2>
+    <p>Entre em contato conosco por qualquer um dos meios abaixo e agende uma reunião!</p>
+    <div class="contatos" id="contato">
+
+        <div class="cardContato">
+            <a href="https://api.whatsapp.com/send?phone=5548999524329&text="><p>WhatsApp</p>
+            <img src="assets/whatsapp.svg" alt="whatsapp"></a>
+        </div>
+
+        <div class="cardContato">
+            <a href="mailto:advandrademaia@gmail.com"><p>e-Mail</p>
+            <img src="assets/mail.svg" alt="e-mail"></a>
+        </div>
+
+        <div class="cardContato">
+            <a href="https://www.instagram.com/andrademaia.adv/"><p>Instagram</p>
+            <img src="assets/instagram.svg" alt="instagram"></a>
+        </div>
+
+        <div class="cardContato">
+            <a href="tel:+554830655956"><p>Telefone</p>
+            <img src="assets/phone.svg" alt="telefone"></a>
+        </div>
+        
+    </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Andrade & Maia Advocacia. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        // Horizontal scroll for reviews section
+        const container = document.getElementById("horScrollContainer");
+
+        container.addEventListener("wheel", (e) => {
+            e.preventDefault(); // Prevents the default vertical scroll of the page
+
+            // Adjusts the horizontal scroll position based on the vertical scroll delta (e.deltaY)
+            container.scrollLeft += e.deltaY; 
+        });
+    </script>
+
+    <script>
+        // Copy address to clipboard
+        const copyButton = document.querySelector('.mapText button');
+        const addressText = "Ed. Miguel Daux - R. Anita Garibaldi, 79 - Salas 603 e 604 - Centro, Florianópolis - SC, 88010-500";
+
+        copyButton.addEventListener('click', () => {
+            navigator.clipboard.writeText(addressText).then(() => {
+                alert('Endereço copiado para a área de transferência!');
+            }).catch(err => {
+                console.error('Erro ao copiar o endereço: ', err);
+            });
+        });
+    </script>
+
+    <script>
+        // Smooth scroll to sections
+        function jumpTo(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+    <script>
+        // Console credits easter egg
+        console.log("%cFeito com ❤ e HTML5 por https://sosumi.xyz/\nLet it beep!", "color: white; background-color: black; padding: 5px; font-size: 16px;");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+/* Cores */
+:root{
+    --AMGreen:#37635A;
+    --AMDarkGreen:#11211A;
+    --AMRed:#8F0317;
+    --AMYellow:#DBA225;
+    --AMPurple:#3F3449;
+}
+
+body{
+    background-color: #ececec;
+    padding: 0;
+    margin: 0;
+    font-family: 'Heebo', sans-serif, 'Noto Emoji';
+    scroll-behavior: smooth;
+}
+
+main{
+    color: black;
+    background-color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 10px 10px;
+}
+
+footer{
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    margin: 10px;
+}
+
+a{
+    color: var(--AMGreen);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Layout de PC da barra de Navegação */
+nav{
+    position:sticky;
+    top: 0;
+    background-color: var(--AMGreen);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 100;
+}
+
+nav a{
+    color: white;
+    text-decoration : none;
+}
+
+.navLinks{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    margin: 0;
+}
+
+.hamburger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.navLogo img{
+    width: 7rem;
+}
+
+.slideshow{
+    max-width: 800px;
+    margin: auto;
+    background-color: var(--AMGreen);
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    scroll-behavior: smooth;
+}
+
+.slideshowOverlay{
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.slideshow img{
+    pointer-events: none;
+}
+
+.reviews{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin-top: 20px;
+    max-height: 220px;
+    margin: 20px 0;
+}
+
+.reviewCard{
+    flex-shrink: 0;
+    background-color: white;
+    color: var(--AMGreen);
+    padding: 20px 20px 10px 20px;
+    border:2px solid var(--AMGreen);
+    border-radius: 10px;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.equipe{
+    position: relative;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+}
+
+.equipe .cardEquipe{
+    background-color: var(--AMGreen);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.equipe img{
+    pointer-events: none;
+    width: 200px;
+    margin: 32px;
+    border-radius: 100%;
+    border: 2px solid white;
+    align-self: center;
+}
+
+.textoCardEquipe{
+    padding: 20px;
+}
+
+.cardImgContainer{
+    height: 100%;
+    margin: 0px;
+    width: 240px;
+}
+
+.equipe h3{
+    color: white;
+}
+
+.googleMaps{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--AMGreen);
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.googleMaps iframe{
+    width: 50%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.mapText{
+    padding: 20px;
+}
+
+button{
+    background-color: var(--AMGreen);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+
+.cardContato{
+    flex:1;
+    text-align: center;
+    background-color: var(--AMGreen);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contatos a{
+    color: white;
+    text-decoration: none;
+}
+
+.cardContato img{
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.miniBio{
+    font-size: 13px;
+}
+
+.cardEquipe h3{
+    font-size: 23px;
+}
+
+
+/* Layout Mobile*/
+@media(max-width:700px){
+    /* Barra de Navegação */
+
+    .navLinks{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navLinks{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--AMGreen);
+        top: -100vh;
+        right: 0;
+        width: 100%;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .navLinks.active{
+        top: 47px;
+        transition: top 0.3s ease-in-out;
+    }
+
+    .equipe img{
+        width: 120px;
+        margin: 20px;
+    }
+
+    .googleMaps{
+        flex-direction: column;
+    }
+
+    .googleMaps iframe{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .contatos{
+        flex-direction: column;
+    }
+
+    .equipe .cardEquipe{
+        flex-direction: column;
+    }
+
+    .cardImgContainer{
+        width: 100%;
+        text-align: center;
+    }
+
+    .cardEquipe img{
+        width: 200px;
+    }
+
+
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+    color: var(--AMGreen);
+    margin: 0;
+}
+
